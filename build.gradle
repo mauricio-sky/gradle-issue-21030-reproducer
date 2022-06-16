@@ -1,0 +1,7 @@
+def modulesExcludedFromCleanBuildTasks = [
+        "test-module"
+]
+
+modulesExcludedFromCleanBuildTasks.forEach { module ->
+    gradle.startParameter.excludedTaskNames.add(":$module:clean".toString())
+}

@@ -1,0 +1,31 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task taskA {
+    println "Hello world A"
+}
+
+task taskB {
+    println "Hello world B"
+}
+
+task taskC {
+    println "Hello world C"
+}
+
+taskA.dependsOn(taskB, taskC)
