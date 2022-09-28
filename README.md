@@ -1,5 +1,8 @@
 # Gradle issue reproducer
 
+This repository reproduces the issue on gradle reported on https://github.com/gradle/gradle/issues/22235
+
+---
 This is a template repository to create reproducer projects for Gradle issues.
 The template contains a GitHub Action definition that runs a Gradle build upon each code change.
 To quickly learn how it works check the following screencast:
